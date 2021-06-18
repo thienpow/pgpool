@@ -63,8 +63,8 @@ RUN apk add --no-cache postgresql-client sed bash
 
 COPY --from=build /etc/passwd /etc/passwd
 
-COPY --chown=postgres:postgres --chmod=770 ./entrypoint.sh /entrypoint.sh
-COPY --chown=postgres:postgres --chmod=770 ./start.sh /start.sh
+COPY --chown=postgres:postgres ./entrypoint.sh /entrypoint.sh
+COPY --chown=postgres:postgres ./start.sh /start.sh
 
 
 USER postgres
