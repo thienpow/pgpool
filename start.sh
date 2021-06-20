@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 # Start Pgpool-II
 echo "Starting Pgpool-II..."
 ${PGPOOL_INSTALL_DIR}/bin/pgpool -n \
